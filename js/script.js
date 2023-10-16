@@ -1,4 +1,4 @@
-spesa=[];
+const spesa=[];
 let input;
 const resultEl = document.querySelector(".alert");
 const listaSpesa = document.querySelector(".listaSpesa");
