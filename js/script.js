@@ -14,11 +14,19 @@ while(input !=='stop'){
 }
 
 if (spesa.length > 0) {
-    resultEl.innerHTML = `
-     ecco la tua lista della spesa:
-     </br>
-     ${spesa}.
-    `;
+    // resultEl.innerHTML = `
+    //  ecco la tua lista della spesa:
+    //  </br>
+    //  ${spesa}.
+    // `;
+
+    let listaHtml = "ecoo la tua lista : </br> <ul>";
+    for (let i = 0; i < spesa.length; i++) {
+        listaHtml += `<li>${spesa[i]}</li>`;
+    }
+    listaHtml += "</ul>";
+    listaSpesa.innerHTML = listaHtml;
+
     } else {
         resultEl.innerHTML = ` nessun prodotto inserito`;
     }
